@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_ackground">
+
+     <!--   <com.example.smlogin.styledcardview
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTintMode="multiply"
+            app:background_Color="@color/cardview_shadow_end_color"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.dangiashish.styledcardview.styledcardview
+            android:id="@+id/styledcardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:background_Color="#29000000"
+            app:background_Type="fill_stroke"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:shadow0_Outer_Alpha="0.3"
+            app:shadow0_Outer_Angle="-45"
+            app:shadow0_Outer_Blur="10dp"
+            app:shadow0_Outer_Color="@color/default_container_color"
+            app:shadow0_Outer_Distance="10dp"
+            app:shadow1_Outer_Alpha="0.5"
+            app:shadow1_Outer_Angle="135"
+            app:shadow1_Outer_Blur="10dp"
+            app:shadow1_Outer_Color="@android:color/holo_blue_light"
+            app:shadow1_Outer_Distance="5dp"
+            app:shadow_Outer_Area="40dp"
+            app:stroke_ColorType="gradient_sweep"
+            app:stroke_Gradient_Angle="-45"
+            app:stroke_Gradient_Color0="@android:color/holo_blue_light"
+            app:stroke_Gradient_Color1="@color/default_container_color"
+            app:stroke_Width="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Let's"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charge"
+                        android:textColor="#673AB7"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView4"
+                        app:layout_constraintStart_toEndOf="@+id/textView5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Journey"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <com.github.dangiashish.styledcardview.styledcardview
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:background_Color="#ECE7E7"
+                    app:background_Type="fill_stroke"
+                    app:cornerRadius="10dp"
+                    app:shadow0_Inner_Color="#D5075797"
+                    app:shadow0_Inner_Blur="10dp"
+                    app:shadow1_Inner_Blur="10dp"
+                    app:shadow1_Inner_Color="#003F51B5"
+                    app:shadow0_Inner_Distance="10dp"
+                    app:shadow0_Inner_Angle="-45"
+                    app:shadow1_Inner_Distance="10dp"
+                    app:shadow1_Inner_Angle="145"
+                    android:layout_marginHorizontal="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/baseline_phone"
+                    android:hint="Username"
+                    />
+                </com.github.dangiashish.styledcardview.styledcardview>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="@drawable/edittext_shadow"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:hint="Password"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <com.example.smlogin.SlidingButton
+                        android:id="@+id/slidingButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:sliding_button_icon_tint="#F6F4F4"
+                        app:sliding_showTrack="true"
+                        app:sliding_text="Sign In"
+                        app:sliding_trackBackground="#915AF4" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Forgot Password?"
+                    android:textColor="#673AB7"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/textView2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="30dp"
+                    android:background="@color/cardview_dark_background"
+                    android:soundEffectsEnabled="true"
+                    app:background_Color="#CC1414"
+                    app:background_ColorType="gradient_linear"
+                    app:background_Gradient_Color4="@color/cardview_shadow_end_color"
+                    app:background_Gradient_OffCenter_Y="@integer/material_motion_duration_long_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:drawableEnd="@drawable/ic_default_slide_icon"
+                        android:gravity="center"
+                        android:text="Join the SM Experience"
+                        android:textColor="#E3338FC6"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/googleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="30dp"
+                    android:background="#EDEDED"
+                    android:drawableStart="@drawable/common_google_signin_btn_icon_light"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Sign In With Google"
+                    android:textColor="#E3050505"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.github.dangiashish.styledcardview.styledcardview>
+
+
+        <!--<id.ss564.lib.slidingbutton.SlidingButton
+            android:id="@+id/slidingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
